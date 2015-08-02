@@ -8,15 +8,18 @@ var outWrite = function(){
 lwip.open("../samples/sample.gif", function (err, img) {
     var width = img.width(),
         height = img.height();
+    console.log(util.inspect(img), img.bpp);
 
-    for (var x = 0; x < width; x++) {
-        outWrite(util.format("LINE [%d]:\n", x));
+    console.log(util.format("LINES: %d", width));
 
-        for (var y = 0; y < height; y++) {
-            var dot = img.getPixel(x, y);
-            outWrite(dot.r, dot.g, dot.b, ' ');
-        }
-        outWrite('\n');
-    }
+//    for (var x = 0; x < width; x++) {
+//        outWrite(util.format("LINE [%d]:\n", x));
+//
+//        for (var y = 0; y < height; y++) {
+//            var dot = img.getPixel(x, y);
+//            outWrite(dot.r, dot.g, dot.b, ' ');
+//        }
+//        outWrite('\n');
+//    }
 });
 
