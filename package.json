@@ -1,0 +1,22 @@
+{
+  "name": "img2urf",
+  "version": "0.0.1",
+  "description" : "A lib support img covert to urf.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rockdragon/img2urf.git"
+  },
+  "keywords": [
+    "img/urf",
+    "airprint",
+    "converter",
+    "mime",
+    "format"
+  ],
+  "dependencies":{
+    "lwip": "0.0.7"
+  },
+  "author": "Mo Ye <moyerock@gmail.com> (http://www.moye.me/)",
+  "license": "MIT"
+}
