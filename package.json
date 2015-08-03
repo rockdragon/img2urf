@@ -1,6 +1,6 @@
 {
   "name": "img2urf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description" : "A lib support that img can be covert to urf.",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "git://github.com/rockdragon/img2urf.git"
   },
   "keywords": [
-    "img/urf",
+    "image/urf",
     "airprint",
     "converter",
     "mime",
