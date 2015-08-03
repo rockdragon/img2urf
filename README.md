@@ -4,7 +4,7 @@ A lib support img covert to urf
 Usage
 -------------
 ```javascript
-var img2urf = require("../lib/lib_img2urf");
+var img2urf = require("img2urf");
 
 img2urf.convert('../samples/sample.gif', '../samples/sample.urf', function(err){
     if(err) return console.log(err);
