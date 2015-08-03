@@ -12,7 +12,7 @@ function print_Urf(fileName, printIp, cb) {
         var msg = {
             "operation-attributes-tag": {
                 "requesting-user-name": "Anonymous",
-                "job-name": "job-1",
+                "job-name": "job-222",
                 "document-format": "image/urf"
             }
             , "job-attributes-tag": {
