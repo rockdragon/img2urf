@@ -1,6 +1,6 @@
 {
   "name": "img2urf",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description" : "A lib support that img can be covert to urf.",
   "main": "index.js",
   "repository": {

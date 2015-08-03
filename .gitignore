@@ -38,6 +38,7 @@ bin/
 obj/
 _Releases/
 _Storage/
+samples/*.urf
 *.ldb
 *.dat
 Gruntfile.js
