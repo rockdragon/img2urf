@@ -2,6 +2,8 @@ var ipp = require('ipp');
 var fs = require("fs");
 var util = require("util");
 
+var img2urf = require("../lib/lib_img2urf");
+
 function get_printer(printIp){
     var ippUrl = util.format('http://%s:%d/%s', printIp, 631, 'ipp/print');
     return ipp.Printer(ippUrl);
@@ -30,6 +32,15 @@ function print_Urf(fileName, printIp, cb) {
     });
 }
 
-print_Urf("../samples/sample.urf", '192.168.66.10', function(err, res){
-    console.log(err, res);
+var src = '../samples/ghost.jpg';
+var dst = '../samples/ghost.urf';
+var printerIp = '192.168.66.10';
+
+img2urf.convert(src, dst, function(err){
+    if(err) return console.log(err);
+    console.log("convert DONE.");
+
+    print_Urf(dst, printerIp, function(err, res){
+        console.log(err, res);
+    });
 });
